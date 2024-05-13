@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# /usr/bin/env python3.11
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.1.4),
