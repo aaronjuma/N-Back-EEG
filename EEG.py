@@ -25,73 +25,34 @@ class Graph:
         self.board.start_stream ()
 
         # Populate the board, will crash if not
-        start = self.board.get_current_board_data(self.bin_size)
-        self.initial_time = start[30,0] #Get the initial timestamp data
+        start = self.board.get_current_board_data(200)
 
+        self.timestamp_channel = self.board.get_timestamp_channel(self.board_id)
+        self.initial_time = start[self.timestamp_channel,0] #Get the initial timestamp data
 
-    # Update function
-    def animate(self, i):
+    def getTimestamp(self):
+        data = self.board.get_current_board_data(1)
+        return data[self.timestamp_channel,0] - self.initial_time
 
-        # Get EEG data from board
-        data = self.board.get_current_board_data(self.bin_size)
-
-        # Get x and y data
-        x = data[30] - self.initial_time
-        y = data[self.channels[0] : self.channels[-1] + 1]
-
-        # Updates plot
-        plt.cla()
-        for i in self.channels:
-            self.ax[i-1].clear()
-
-            #Add Processing Code Here:
-            DataFilter.detrend(y[i-1], DetrendOperations.CONSTANT.value)
-            DataFilter.perform_bandpass(y[i-1], self.sampling_rate, 2.0, 60.0, 2,
-                                        FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
-            # DataFilter.perform_bandstop(data[channel], self.sampling_rate, 48.0, 52.0, 2,
-            #                             FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
-            DataFilter.perform_bandstop(y[i-1], self.sampling_rate, 58.0, 62.0, 2,
-                                        FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
-            DataFilter.perform_rolling_filter(y[i-1], 3, AggOperations.MEAN.value)
-            DataFilter.perform_rolling_filter(y[i-1], 3, AggOperations.MEDIAN.value)
-            DataFilter.perform_wavelet_denoising(y[i-1], WaveletTypes.BIOR3_9, 3,
-                                        WaveletDenoisingTypes.SURESHRINK, ThresholdTypes.HARD,
-                                        WaveletExtensionTypes.SYMMETRIC, NoiseEstimationLevelTypes.FIRST_LEVEL)
-            
-            # Plot the graph
-            self.ax[i-1].plot(x, y[i-1], color = 'tab:red')
-
-        # Add at the bottom
-        self.ax[self.channels[-1]-1].set_xlabel('Time (s)')
-        
-        # Finishing touch ups on the graph
-        plt.xticks(rotation=45, ha='right')
-        # plt.title('EEG Real-Time Data')
-
-    def close(self, event):
+    def close(self):
         # Get EEG data from board
         data = self.board.get_board_data()
 
         # Get x and y data
-        x = data[30] - self.initial_time
+        x = data[self.timestamp_channel] - self.initial_time
         new_data = np.array(x)
         y = data[self.channels[0] : self.channels[-1] + 1]
         new_data = np.vstack((x, y))
-        # print(new_data)
 
         np.savetxt("test.csv", np.transpose(new_data), delimiter=",")
-
-
-    # Plot it in real time
-    def plot(self):
-
-        # Plots the graph in real time
-        self.fig.canvas.mpl_connect('close_event', self.close)
-        ani = animation.FuncAnimation(self.fig, self.animate, interval=50, cache_frame_data=False)
-        plt.show()
 
 
 # Running the program
 if __name__ == '__main__':
     graph = Graph()
-    graph.plot()
+    time.sleep(5)
+    print(graph.getTimestamp())
+    time.sleep(3)
+    print(graph.getTimestamp())
+    graph.close()
+
