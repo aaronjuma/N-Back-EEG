@@ -49,10 +49,10 @@ class EEG:
 
 # Running the program
 if __name__ == '__main__':
-    graph = Graph()
+    eeg = EEG()
     time.sleep(5)
-    print(graph.getTimestamp())
+    print(eeg.getTimestamp())
     time.sleep(3)
-    print(graph.getTimestamp())
-    graph.close()
+    print(eeg.getTimestamp())
+    eeg.close()
 
