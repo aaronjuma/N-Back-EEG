@@ -9,30 +9,23 @@ from brainflow.data_filter import DataFilter
 def main():
     BoardShim.enable_dev_board_logger()
 
-    params = BrainFlowInputParams()
-
     # use synthetic board for demo
+    params = BrainFlowInputParams()
     board = BoardShim(BoardIds.SYNTHETIC_BOARD.value, params)
-
-    # real g.tec board
-    # board = BoardShim(BoardIds.UNICORN_BOARD.value, params)
-
-
     board.prepare_session()
     board.start_stream()
     BoardShim.log_message(LogLevels.LEVEL_INFO.value, 'start sleeping in the main thread')
-
-    # Populate the board
-    time.sleep(10)
-    data = board.get_board_data()
+    time.sleep(1)
+    data = board.get_current_board_data(num_samples = 500)
     board.stop_stream()
     board.release_session()
 
-
-    # Getting channels
+    # demo how to convert it to pandas DF and plot data
     eeg_channels = BoardShim.get_eeg_channels(BoardIds.SYNTHETIC_BOARD.value)
-    # eeg_channels = BoardShim.get_eeg_channels(BoardIds.UNICORN_BOARD.value)
-    df = pd.DataFrame(np.transpose(data))
+    print(eeg_channels)
+    print(data[-2])
+    # eeg_data = data[1:17] #16 Channels
+    # print(eeg_data)
 
     # demo for data serialization using brainflow API, we recommend to use it instead pandas.to_csv()
     DataFilter.write_file(data, 'test.csv', 'w')  # use 'a' for append mode
