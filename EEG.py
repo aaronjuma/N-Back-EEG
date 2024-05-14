@@ -6,7 +6,7 @@ import matplotlib.animation as animation
 from brainflow.board_shim import BoardShim, BrainFlowInputParams, BoardIds, BrainFlowPresets
 from brainflow.data_filter import DataFilter, FilterTypes, DetrendOperations, AggOperations, WaveletTypes, NoiseEstimationLevelTypes, WaveletExtensionTypes, ThresholdTypes, WaveletDenoisingTypes
 
-class Graph:
+class EEG:
 
     # Initializer
     def __init__(self):
