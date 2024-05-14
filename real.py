@@ -53,11 +53,11 @@ class Graph:
             #                             FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
             DataFilter.perform_bandstop(data[channel], self.sampling_rate, 58.0, 62.0, 2,
                                         FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
-            DataFilter.perform_rolling_filter(data[channel], 3, AggOperations.MEAN.value)
-            DataFilter.perform_rolling_filter(data[channel], 3, AggOperations.MEDIAN.value)
-            DataFilter.perform_wavelet_denoising(data[channel], WaveletTypes.BIOR3_9, 3,
-                                        WaveletDenoisingTypes.SURESHRINK, ThresholdTypes.HARD,
-                                        WaveletExtensionTypes.SYMMETRIC, NoiseEstimationLevelTypes.FIRST_LEVEL)
+            # DataFilter.perform_rolling_filter(data[channel], 3, AggOperations.MEAN.value)
+            # DataFilter.perform_rolling_filter(data[channel], 3, AggOperations.MEDIAN.value)
+            # DataFilter.perform_wavelet_denoising(data[channel], WaveletTypes.BIOR3_9, 3,
+            #                             WaveletDenoisingTypes.SURESHRINK, ThresholdTypes.HARD,
+            #                             WaveletExtensionTypes.SYMMETRIC, NoiseEstimationLevelTypes.FIRST_LEVEL)
             self.curves[count].setData(data[channel].tolist())
 
         self.app.processEvents()
@@ -68,7 +68,7 @@ def main():
     logging.basicConfig(level=logging.DEBUG)
 
     params = BrainFlowInputParams()
-    board_shim = BoardShim(BoardIds.SYNTHETIC_BOARD, params)
+    board_shim = BoardShim(BoardIds.UNICORN_BOARD, params)
     try:
         board_shim.prepare_session()
         board_shim.start_stream(450000)

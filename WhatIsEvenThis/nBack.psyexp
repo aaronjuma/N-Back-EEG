@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant':'f&quot;{randint(0, 999999):06.0f}&quot;', 'session':'001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="(1024, 768)" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="nBack" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="MIDDLE_BUTTON" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <TextComponent name="n_back_one">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="n_back_one" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$stimuli_letter&amp;#10;" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="Key_one">
+        <Param val="'z'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correct_key" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="Key_one" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.1" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_2">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS.experiment.addData(&quot;eegtime&quot;, eeg.getTimestamp());&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="thisExp.addData('eegtime', eeg.getTimestamp())" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="WelcomeScreen">
+      <TextComponent name="WelcomeScreenText">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="WelcomeScreenText" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome to the n-back task" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="WelcomeInstructions">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="WelcomeInstructions" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Sequences of letter will flash on your screen.&amp;#10;You must decide if you saw the same letter immediately before.&amp;#10;&amp;#10;For example: A-X-X-D-L&amp;#10;&amp;#10;In this example, when the letter X appears for the second time, &amp;#10;you must press the Z key.&amp;#10;&amp;#10;Press the Z key to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="keyWelcome">
+        <Param val="'z'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="keyWelcome" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="3.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <CodeComponent name="code">
+        <Param val="import EEGController&amp;#10;eeg = EEGController.EEGController()" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="import * as EEGController from 'EEGController';&amp;#10;var eeg;&amp;#10;eeg = new EEGController.EEGController();&amp;#10;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Blank500">
+      <TextComponent name="text">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="GoodByeScreen">
+      <TextComponent name="GoodBye">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="GoodBye" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="THANK YOU FOR PARTICIPATING." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Blank1500">
+      <TextComponent name="ISI">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="ISI" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="+" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="trial_two">
+      <TextComponent name="Block_2_stimulus">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Block_2_stimulus" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$Letter_stimulus&amp;#10;" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_Two">
+        <Param val="'z'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$correct_key" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_Two" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.1" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Two_Instructions">
+      <TextComponent name="Intro_Block_two">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Intro_Block_two" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="NEW INSTRUCTIONS&amp;#10;&amp;#10;You must decide if you saw the same letter 2-steps before.&amp;#10;&amp;#10;For example: A-B-C-B-L&amp;#10;&amp;#10;In this example, when the letter B appears for the second AFTER 2-steps,&amp;#10;you must press the Z key.&amp;#10;&amp;#10;Press the Z key to continue." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="Start_Block_One">
+        <Param val="'z'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="Start_Block_One" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="WelcomeScreen"/>
+    <Routine name="Blank500"/>
+    <LoopInitiator loopType="TrialHandler" name="trialsOne">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'stimuli_letter': 'V', 'target': None, 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}, {'stimuli_letter': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="loopTemplate1.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trialsOne" valType="code"/>
+      <Param name="random seed" updates="None" val="1" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <Routine name="Blank1500"/>
+    <LoopTerminator name="trialsOne"/>
+    <Routine name="Two_Instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trialsTwo">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Letter_stimulus': 'V', 'target': None, 'correct_key': None}, {'Letter_stimulus': 'W', 'target': None, 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B ', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B ', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B ', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'B', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'C', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'X', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'A', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'V', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'W', 'target': 'N', 'correct_key': None}, {'Letter_stimulus': 'V', 'target': 'Y', 'correct_key': 'z'}, {'Letter_stimulus': 'Y', 'target': 'N', 'correct_key': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="loopTemplate2.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trialsTwo" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial_two"/>
+    <Routine name="Blank1500"/>
+    <LoopTerminator name="trialsTwo"/>
+    <Routine name="Blank500"/>
+    <Routine name="GoodByeScreen"/>
+  </Flow>
+</PsychoPy2experiment>
