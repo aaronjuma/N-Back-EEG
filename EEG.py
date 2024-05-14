@@ -1,5 +1,6 @@
 import time
 import numpy as np
+from numpy import genfromtxt
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
@@ -16,6 +17,8 @@ class EEG:
         # self.board_id = BoardIds.GALEA_BOARD
         self.board_id = BoardIds.SYNTHETIC_BOARD
         self.board = BoardShim(self.board_id, BrainFlowInputParams())
+
+        # Get the channel indexes
         self.channels = self.board.get_eeg_channels(self.board_id)
 
         self.sampling_rate = BoardShim.get_sampling_rate(self.board_id) # Hz
@@ -27,12 +30,16 @@ class EEG:
         # Populate the board, will crash if not
         start = self.board.get_current_board_data(200)
 
+
+        # Get timestamp data
         self.timestamp_channel = self.board.get_timestamp_channel(self.board_id)
         self.initial_time = start[self.timestamp_channel,0] #Get the initial timestamp data
 
+    # Return timestamp data
     def getTimestamp(self):
         data = self.board.get_current_board_data(1)
         return data[self.timestamp_channel,0] - self.initial_time
+    
 
     def close(self):
         # Get EEG data from board
@@ -55,4 +62,26 @@ if __name__ == '__main__':
     time.sleep(3)
     print(eeg.getTimestamp())
     eeg.close()
+
+    # Read data from csv
+    data = genfromtxt('test.csv', delimiter=',')
+
+    # Turn columns to row (easier to manipulate)
+    data = np.transpose(data)
+
+    # Get amount of channels
+    channels = len(data) - 1
+
+    # Set up figure
+    fig = plt.figure()
+    ax = fig.subplots(channels)
+
+    # Seperate the time data from EEG channels
+    x = data[0]
+    y = data[1:channels+1]
+
+    # Plot
+    for i in range(channels):
+        ax[i].plot(x, y[i], color = 'tab:red')
+    plt.show()
 
