@@ -28,8 +28,8 @@ class EEG:
         self.board.start_stream ()
 
         # Populate the board, will crash if not
+        time.sleep(0.2)
         start = self.board.get_current_board_data(200)
-
 
         # Get timestamp data
         self.timestamp_channel = self.board.get_timestamp_channel(self.board_id)
@@ -52,15 +52,17 @@ class EEG:
         new_data = np.vstack((x, y))
 
         np.savetxt("test.csv", np.transpose(new_data), delimiter=",")
+        self.board.release_session()
 
 
 # Running the program
 if __name__ == '__main__':
     eeg = EEG()
     time.sleep(5)
-    print(eeg.getTimestamp())
+    times = []
+    times.append(eeg.getTimestamp())
     time.sleep(3)
-    print(eeg.getTimestamp())
+    times.append(eeg.getTimestamp())
     eeg.close()
 
     # Read data from csv
@@ -74,14 +76,21 @@ if __name__ == '__main__':
 
     # Set up figure
     fig = plt.figure()
-    ax = fig.subplots(channels)
+    ax = fig.subplots(channels+1)
 
     # Seperate the time data from EEG channels
     x = data[0]
     y = data[1:channels+1]
 
+    ts = np.where(x == times[0])[0][0]
+    print(ts)
+
     # Plot
-    for i in range(channels):
-        ax[i].plot(x, y[i], color = 'tab:red')
+    # for i in range(channels):
+    #     ax[i].plot(x, y[i], color = 'tab:red')
+    #     ax[i].vlines(x = times, ymin = min(y[i]), ymax = max(y[i]), color = 'b')
+
+    ax[channels].plot(x[ts-25:ts+200], y[0,ts-25:ts+200], color = 'g')
+    ax[channels].vlines(x = x[ts], ymin=min(y[0,ts-25:ts+200]), ymax=max(y[0,ts-25:ts+200]), color = 'b')
     plt.show()
 
