@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on May 14, 2024, at 17:11
+    on May 15, 2024, at 12:10
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -57,7 +57,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\General Use\\Desktop\\WhatIsEvenThis\\nBack.py',
+    originPath='C:\\Users\\General Use\\Documents\\GitHub\\N-Back-EEG\\nBack.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -437,7 +437,7 @@ for thisTrialsOne in trialsOne:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         # Run 'Each Frame' code from code_2
-        thisExp.addData('eegtime', eeg.getTimestamp())
+        thisExp.addData('eegtime', eeg.setMarker())
         
         # *n_back_one* updates
         if n_back_one.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -766,7 +766,7 @@ for thisTrialsTwo in trialsTwo:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         # Run 'Each Frame' code from code_3
-        thisExp.addData('eegtime', eeg.getTimestamp())
+        thisExp.addData('eegtime', eeg.setMarker())
         
         # *Block_2_stimulus* updates
         if Block_2_stimulus.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
