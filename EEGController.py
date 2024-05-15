@@ -55,6 +55,7 @@ class EEGController:
         new_data = np.array(x)
         y = data[self.channels[0] : self.channels[-1] + 1]
         new_data = np.vstack((x, y))
+        new_data = np.vstack((new_data, data[self.board.get_marker_channel()]))
 
         np.savetxt("test.csv", np.transpose(new_data), delimiter=",")
         print("HELLLOOOOOOOOO IT SAVESS")
