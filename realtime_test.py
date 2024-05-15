@@ -12,7 +12,7 @@ class Graph:
     def __init__(self, board_shim):
         self.board_id = board_shim.get_board_id()
         self.board_shim = board_shim
-        self.exg_channels = BoardShim.get_exg_channels(self.board_id)
+        self.exg_channels = BoardShim.get_eeg_channels(self.board_id)
         self.sampling_rate = BoardShim.get_sampling_rate(self.board_id)
         self.update_speed_ms = 50
         self.window_size = 4
@@ -68,7 +68,7 @@ def main():
     logging.basicConfig(level=logging.DEBUG)
 
     params = BrainFlowInputParams()
-    board_shim = BoardShim(BoardIds.UNICORN_BOARD, params)
+    board_shim = BoardShim(BoardIds.GALEA_BOARD, params)
     try:
         board_shim.prepare_session()
         board_shim.start_stream(450000)
