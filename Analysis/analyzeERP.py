@@ -46,8 +46,8 @@ x = data[0] # timestamps
 y = data[3] # third channel
 
 DataFilter.detrend(y, DetrendOperations.CONSTANT.value)
-DataFilter.perform_lowpass(y, sampling_rate, 40.0, 4, FilterTypes.BUTTERWORTH, 0)
-DataFilter.perform_highpass(y, sampling_rate, 0.1, 4, FilterTypes.BUTTERWORTH, 0)
+DataFilter.perform_lowpass(y, sampling_rate, 40.0, 4, FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
+DataFilter.perform_highpass(y, sampling_rate, 0.1, 4, FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
 # DataFilter.remove_environmental_noise(y, sampling_rate, NoiseTypes.SIXTY.value)
 DataFilter.perform_rolling_filter(y, 3, AggOperations.MEAN.value)
 DataFilter.perform_rolling_filter(y, 3, AggOperations.MEDIAN.value)
