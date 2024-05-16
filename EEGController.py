@@ -15,9 +15,10 @@ class EEGController:
 
         # Setting up the board
         params = BrainFlowInputParams()
-        params.serial_number = 'UN-2022.04.20'
-        self.board_id = BoardIds.UNICORN_BOARD
-        # self.board_id = BoardIds.GALEA_BOARD
+        # params.serial_number = 'UN-2022.04.20'
+        # self.board_id = BoardIds.UNICORN_BOARD
+        self.board_id = BoardIds.GALEA_BOARD
+        params.ip_address = "192.168.0.6"
         # self.board_id = BoardIds.SYNTHETIC_BOARD
         self.board = BoardShim(self.board_id, params)
 
@@ -39,7 +40,7 @@ class EEGController:
         self.initial_time = start[self.timestamp_channel,0] #Get the initial timestamp data
 
         # Reseting Marker
-        self.marker_id = -1
+        self.marker_id = 0
 
         atexit.register(self.close)
 
@@ -57,13 +58,13 @@ class EEGController:
         self.board.release_session()
 
         # Get x and y data
-        x = data[self.timestamp_channel] - self.initial_time
-        new_data = np.array(x)
-        y = data[self.channels[0] : self.channels[-1] + 1]
-        new_data = np.vstack((x, y))
-        new_data = np.vstack((new_data, data[self.marker_channel]))
+        data[self.timestamp_channel] = data[self.timestamp_channel] - self.initial_time
+        # new_data = np.array(x)
+        # y = data[self.channels[0] : self.channels[-1] + 1]
+        # new_data = np.vstack((x, y))
+        # new_data = np.vstack((new_data, data[self.marker_channel]))
 
-        np.savetxt("test.csv", np.transpose(new_data), delimiter=",")
+        np.savetxt("test.csv", np.transpose(data), delimiter=",")
         print("HELLLOOOOOOOOO IT SAVESS")
 
 # # Running the program

@@ -68,7 +68,9 @@ def main():
     logging.basicConfig(level=logging.DEBUG)
 
     params = BrainFlowInputParams()
-    board_shim = BoardShim(BoardIds.GALEA_BOARD, params)
+    params.ip_port = 6987
+    params.ip_address = "192.168.0.6"
+    board_shim = BoardShim(BoardIds.GALEA_BOARD_V4, params)
     try:
         board_shim.prepare_session()
         board_shim.start_stream(450000)
