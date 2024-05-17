@@ -1,0 +1,700 @@
+1.4102 	WARNING 	Speech-to-text recognition module for PocketSphinx is not available (use command `pip install SpeechRecognition` to get it). Transcription will be unavailable using that service this session.
+1.4109 	WARNING 	Speech-to-text recognition using Google online services is not available (use command `pip install google-api-core google-auth google-cloud google-cloud-speech googleapis-common-protos` to get it). Transcription will be unavailable using that service this session.
+17.1691 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [3840, 2160]. Using actual size
+18.2610 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020703DA2090>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020703DA1E90>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002077C57DA10>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000020707A56D90>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+18.2611 	EXP 	window1: mouseVisible = True
+18.2611 	EXP 	window1: backgroundImage = None
+18.2612 	EXP 	window1: backgroundFit = 'cover'
+18.2614 	EXP 	window1: mouseVisible = False
+18.2614 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+18.2614 	EXP 	window1: recordFrameIntervals = False
+18.4266 	EXP 	window1: recordFrameIntervals = True
+18.6099 	EXP 	Screen (0) actual frame rate measured at 59.98Hz
+18.6099 	EXP 	window1: recordFrameIntervals = False
+22.4210 	EXP 	Created WelcomeScreenText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='WelcomeScreenText', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Welcome to the n-back task', units='height', win=Window(...), wrapWidth=1)
+22.4658 	EXP 	Created WelcomeInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='WelcomeInstructions', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.4720 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+22.4734 	EXP 	Created n_back_one = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='n_back_one', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.4746 	EXP 	Created ISI = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.5055 	EXP 	Created Intro_Block_two = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Intro_Block_two', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5070 	EXP 	Created Block_2_stimulus = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Block_2_stimulus', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.5089 	EXP 	Created ISI = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ISI', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.5113 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+22.5208 	EXP 	Created GoodBye = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='GoodBye', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='THANK YOU FOR PARTICIPATING.', units='height', win=Window(...), wrapWidth=1)
+22.5273 	EXP 	WelcomeScreenText: autoDraw = True
+24.5268 	EXP 	WelcomeScreenText: autoDraw = False
+24.5268 	EXP 	WelcomeInstructions: autoDraw = True
+25.1644 	DATA 	Keypress: z
+38.9976 	DATA 	Keypress: z
+39.0106 	EXP 	WelcomeScreenText: autoDraw = False
+39.0106 	EXP 	WelcomeInstructions: autoDraw = False
+39.0106 	EXP 	text: autoDraw = True
+39.5237 	EXP 	Imported loopTemplate1.xlsx as conditions, 147 conditions, 3 params
+39.5268 	EXP 	Created sequence: sequential, trialTypes=147, nReps=1, seed=1
+39.5272 	EXP 	New trial (rep=0, index=0): {'stimuli_letter': 'V', 'target': None, 'correct_key': None}
+39.5368 	EXP 	text: autoDraw = False
+39.5368 	EXP 	text: autoDraw = False
+39.5368 	EXP 	n_back_one: height = 0.05
+39.5368 	EXP 	n_back_one: height = 0.05
+39.5368 	EXP 	n_back_one: height = 0.05
+39.5368 	EXP 	n_back_one: text = 'V'
+39.5368 	EXP 	n_back_one: autoDraw = True
+39.8441 	EXP 	n_back_one: autoDraw = False
+40.7105 	EXP 	n_back_one: autoDraw = False
+40.7105 	EXP 	ISI: height = 0.05
+40.7105 	EXP 	ISI: height = 0.05
+40.7105 	EXP 	ISI: height = 0.05
+40.7105 	EXP 	ISI: text = '+'
+40.7105 	EXP 	ISI: autoDraw = True
+41.1309 	DATA 	Keypress: z
+42.1949 	EXP 	New trial (rep=0, index=1): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+42.2108 	EXP 	ISI: autoDraw = False
+42.2108 	EXP 	ISI: autoDraw = False
+42.2108 	EXP 	n_back_one: height = 0.05
+42.2108 	EXP 	n_back_one: height = 0.05
+42.2108 	EXP 	n_back_one: height = 0.05
+42.2108 	EXP 	n_back_one: text = 'X'
+42.2108 	EXP 	n_back_one: autoDraw = True
+42.5114 	EXP 	n_back_one: autoDraw = False
+43.4107 	EXP 	n_back_one: autoDraw = False
+43.4107 	EXP 	ISI: text = '+'
+43.4107 	EXP 	ISI: autoDraw = True
+44.8957 	EXP 	New trial (rep=0, index=2): {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}
+44.9108 	EXP 	ISI: autoDraw = False
+44.9108 	EXP 	ISI: autoDraw = False
+44.9108 	EXP 	n_back_one: height = 0.05
+44.9108 	EXP 	n_back_one: height = 0.05
+44.9108 	EXP 	n_back_one: height = 0.05
+44.9108 	EXP 	n_back_one: text = 'A'
+44.9108 	EXP 	n_back_one: autoDraw = True
+45.2109 	EXP 	n_back_one: autoDraw = False
+46.0940 	EXP 	n_back_one: autoDraw = False
+46.0940 	EXP 	ISI: text = '+'
+46.1108 	EXP 	ISI: autoDraw = True
+47.5956 	EXP 	New trial (rep=0, index=3): {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}
+47.6112 	EXP 	ISI: autoDraw = False
+47.6112 	EXP 	ISI: autoDraw = False
+47.6112 	EXP 	n_back_one: text = 'A'
+47.6112 	EXP 	n_back_one: autoDraw = True
+47.9107 	EXP 	n_back_one: autoDraw = False
+48.0502 	DATA 	Keypress: z
+48.0609 	EXP 	n_back_one: autoDraw = False
+48.0609 	EXP 	ISI: text = '+'
+48.0609 	EXP 	ISI: autoDraw = True
+49.5467 	EXP 	New trial (rep=0, index=4): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+49.5607 	EXP 	ISI: autoDraw = False
+49.5607 	EXP 	ISI: autoDraw = False
+49.5607 	EXP 	n_back_one: height = 0.05
+49.5607 	EXP 	n_back_one: height = 0.05
+49.5607 	EXP 	n_back_one: height = 0.05
+49.5607 	EXP 	n_back_one: text = 'X'
+49.5607 	EXP 	n_back_one: autoDraw = True
+49.8608 	EXP 	n_back_one: autoDraw = False
+50.7611 	EXP 	n_back_one: autoDraw = False
+50.7611 	EXP 	ISI: text = '+'
+50.7611 	EXP 	ISI: autoDraw = True
+52.2455 	EXP 	New trial (rep=0, index=5): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+52.2614 	EXP 	ISI: autoDraw = False
+52.2614 	EXP 	ISI: autoDraw = False
+52.2614 	EXP 	n_back_one: height = 0.05
+52.2614 	EXP 	n_back_one: height = 0.05
+52.2614 	EXP 	n_back_one: height = 0.05
+52.2614 	EXP 	n_back_one: text = 'B'
+52.2614 	EXP 	n_back_one: autoDraw = True
+52.5614 	EXP 	n_back_one: autoDraw = False
+53.4613 	EXP 	n_back_one: autoDraw = False
+53.4613 	EXP 	ISI: text = '+'
+53.4613 	EXP 	ISI: autoDraw = True
+54.9459 	EXP 	New trial (rep=0, index=6): {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}
+54.9610 	EXP 	ISI: autoDraw = False
+54.9610 	EXP 	ISI: autoDraw = False
+54.9610 	EXP 	n_back_one: text = 'B'
+54.9610 	EXP 	n_back_one: autoDraw = True
+55.2612 	EXP 	n_back_one: autoDraw = False
+56.1611 	EXP 	n_back_one: autoDraw = False
+56.1611 	EXP 	ISI: text = '+'
+56.1611 	EXP 	ISI: autoDraw = True
+57.6478 	EXP 	New trial (rep=0, index=7): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+57.6614 	EXP 	ISI: autoDraw = False
+57.6614 	EXP 	ISI: autoDraw = False
+57.6614 	EXP 	n_back_one: height = 0.05
+57.6614 	EXP 	n_back_one: height = 0.05
+57.6614 	EXP 	n_back_one: height = 0.05
+57.6614 	EXP 	n_back_one: text = 'X'
+57.6614 	EXP 	n_back_one: autoDraw = True
+57.9615 	EXP 	n_back_one: autoDraw = False
+58.8618 	EXP 	n_back_one: autoDraw = False
+58.8618 	EXP 	ISI: text = '+'
+58.8618 	EXP 	ISI: autoDraw = True
+60.3483 	EXP 	New trial (rep=0, index=8): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+60.3624 	EXP 	ISI: autoDraw = False
+60.3624 	EXP 	ISI: autoDraw = False
+60.3624 	EXP 	n_back_one: height = 0.05
+60.3624 	EXP 	n_back_one: height = 0.05
+60.3624 	EXP 	n_back_one: height = 0.05
+60.3624 	EXP 	n_back_one: text = 'Y'
+60.3624 	EXP 	n_back_one: autoDraw = True
+60.6613 	EXP 	n_back_one: autoDraw = False
+61.5614 	EXP 	n_back_one: autoDraw = False
+61.5614 	EXP 	ISI: text = '+'
+61.5614 	EXP 	ISI: autoDraw = True
+63.0477 	EXP 	New trial (rep=0, index=9): {'stimuli_letter': 'Y', 'target': 'Y', 'correct_key': 'z'}
+63.0615 	EXP 	ISI: autoDraw = False
+63.0615 	EXP 	ISI: autoDraw = False
+63.0615 	EXP 	n_back_one: text = 'Y'
+63.0615 	EXP 	n_back_one: autoDraw = True
+63.3613 	EXP 	n_back_one: autoDraw = False
+64.2617 	EXP 	n_back_one: autoDraw = False
+64.2617 	EXP 	ISI: text = '+'
+64.2617 	EXP 	ISI: autoDraw = True
+65.7476 	EXP 	New trial (rep=0, index=10): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+65.7614 	EXP 	ISI: autoDraw = False
+65.7614 	EXP 	ISI: autoDraw = False
+65.7614 	EXP 	n_back_one: height = 0.05
+65.7614 	EXP 	n_back_one: height = 0.05
+65.7614 	EXP 	n_back_one: height = 0.05
+65.7614 	EXP 	n_back_one: text = 'B'
+65.7614 	EXP 	n_back_one: autoDraw = True
+66.0617 	EXP 	n_back_one: autoDraw = False
+66.9614 	EXP 	n_back_one: autoDraw = False
+66.9614 	EXP 	ISI: text = '+'
+66.9614 	EXP 	ISI: autoDraw = True
+68.4479 	EXP 	New trial (rep=0, index=11): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+68.4621 	EXP 	ISI: autoDraw = False
+68.4621 	EXP 	ISI: autoDraw = False
+68.4621 	EXP 	n_back_one: height = 0.05
+68.4621 	EXP 	n_back_one: height = 0.05
+68.4621 	EXP 	n_back_one: height = 0.05
+68.4621 	EXP 	n_back_one: text = 'Y'
+68.4621 	EXP 	n_back_one: autoDraw = True
+68.7617 	EXP 	n_back_one: autoDraw = False
+69.6620 	EXP 	n_back_one: autoDraw = False
+69.6620 	EXP 	ISI: text = '+'
+69.6620 	EXP 	ISI: autoDraw = True
+71.1476 	EXP 	New trial (rep=0, index=12): {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}
+71.1617 	EXP 	ISI: autoDraw = False
+71.1617 	EXP 	ISI: autoDraw = False
+71.1617 	EXP 	n_back_one: height = 0.05
+71.1617 	EXP 	n_back_one: height = 0.05
+71.1617 	EXP 	n_back_one: height = 0.05
+71.1617 	EXP 	n_back_one: text = 'V'
+71.1617 	EXP 	n_back_one: autoDraw = True
+71.4617 	EXP 	n_back_one: autoDraw = False
+72.3621 	EXP 	n_back_one: autoDraw = False
+72.3621 	EXP 	ISI: text = '+'
+72.3621 	EXP 	ISI: autoDraw = True
+73.8475 	EXP 	New trial (rep=0, index=13): {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}
+73.8620 	EXP 	ISI: autoDraw = False
+73.8620 	EXP 	ISI: autoDraw = False
+73.8620 	EXP 	n_back_one: height = 0.05
+73.8620 	EXP 	n_back_one: height = 0.05
+73.8620 	EXP 	n_back_one: height = 0.05
+73.8620 	EXP 	n_back_one: text = 'C'
+73.8620 	EXP 	n_back_one: autoDraw = True
+74.1619 	EXP 	n_back_one: autoDraw = False
+75.0621 	EXP 	n_back_one: autoDraw = False
+75.0621 	EXP 	ISI: text = '+'
+75.0621 	EXP 	ISI: autoDraw = True
+76.5475 	EXP 	New trial (rep=0, index=14): {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}
+76.5618 	EXP 	ISI: autoDraw = False
+76.5618 	EXP 	ISI: autoDraw = False
+76.5618 	EXP 	n_back_one: text = 'C'
+76.5618 	EXP 	n_back_one: autoDraw = True
+76.8620 	EXP 	n_back_one: autoDraw = False
+77.7623 	EXP 	n_back_one: autoDraw = False
+77.7623 	EXP 	ISI: text = '+'
+77.7623 	EXP 	ISI: autoDraw = True
+79.2465 	EXP 	New trial (rep=0, index=15): {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}
+79.2618 	EXP 	ISI: autoDraw = False
+79.2618 	EXP 	ISI: autoDraw = False
+79.2618 	EXP 	n_back_one: height = 0.05
+79.2618 	EXP 	n_back_one: height = 0.05
+79.2618 	EXP 	n_back_one: height = 0.05
+79.2618 	EXP 	n_back_one: text = 'V'
+79.2618 	EXP 	n_back_one: autoDraw = True
+79.5619 	EXP 	n_back_one: autoDraw = False
+80.0170 	DATA 	Keypress: z
+80.0288 	EXP 	n_back_one: autoDraw = False
+80.0288 	EXP 	ISI: text = '+'
+80.0288 	EXP 	ISI: autoDraw = True
+81.5130 	EXP 	New trial (rep=0, index=16): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+81.5287 	EXP 	ISI: autoDraw = False
+81.5287 	EXP 	ISI: autoDraw = False
+81.5287 	EXP 	n_back_one: height = 0.05
+81.5287 	EXP 	n_back_one: height = 0.05
+81.5287 	EXP 	n_back_one: height = 0.05
+81.5287 	EXP 	n_back_one: text = 'X'
+81.5287 	EXP 	n_back_one: autoDraw = True
+81.8287 	EXP 	n_back_one: autoDraw = False
+82.7289 	EXP 	n_back_one: autoDraw = False
+82.7289 	EXP 	ISI: text = '+'
+82.7289 	EXP 	ISI: autoDraw = True
+84.2136 	EXP 	New trial (rep=0, index=17): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+84.2289 	EXP 	ISI: autoDraw = False
+84.2289 	EXP 	ISI: autoDraw = False
+84.2289 	EXP 	n_back_one: height = 0.05
+84.2289 	EXP 	n_back_one: height = 0.05
+84.2289 	EXP 	n_back_one: height = 0.05
+84.2289 	EXP 	n_back_one: text = 'Y'
+84.2289 	EXP 	n_back_one: autoDraw = True
+84.5289 	EXP 	n_back_one: autoDraw = False
+85.4289 	EXP 	n_back_one: autoDraw = False
+85.4289 	EXP 	ISI: text = '+'
+85.4289 	EXP 	ISI: autoDraw = True
+86.9143 	EXP 	New trial (rep=0, index=18): {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}
+86.9290 	EXP 	ISI: autoDraw = False
+86.9290 	EXP 	ISI: autoDraw = False
+86.9290 	EXP 	n_back_one: height = 0.05
+86.9290 	EXP 	n_back_one: height = 0.05
+86.9290 	EXP 	n_back_one: height = 0.05
+86.9290 	EXP 	n_back_one: text = 'C'
+86.9290 	EXP 	n_back_one: autoDraw = True
+87.2292 	EXP 	n_back_one: autoDraw = False
+88.1294 	EXP 	n_back_one: autoDraw = False
+88.1294 	EXP 	ISI: text = '+'
+88.1294 	EXP 	ISI: autoDraw = True
+89.6139 	EXP 	New trial (rep=0, index=19): {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}
+89.6291 	EXP 	ISI: autoDraw = False
+89.6291 	EXP 	ISI: autoDraw = False
+89.6291 	EXP 	n_back_one: text = 'C'
+89.6291 	EXP 	n_back_one: autoDraw = True
+89.9293 	EXP 	n_back_one: autoDraw = False
+90.8294 	EXP 	n_back_one: autoDraw = False
+90.8294 	EXP 	ISI: text = '+'
+90.8294 	EXP 	ISI: autoDraw = True
+92.3148 	EXP 	New trial (rep=0, index=20): {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}
+92.3295 	EXP 	ISI: autoDraw = False
+92.3295 	EXP 	ISI: autoDraw = False
+92.3295 	EXP 	n_back_one: height = 0.05
+92.3295 	EXP 	n_back_one: height = 0.05
+92.3295 	EXP 	n_back_one: height = 0.05
+92.3295 	EXP 	n_back_one: text = 'A'
+92.3295 	EXP 	n_back_one: autoDraw = True
+92.6294 	EXP 	n_back_one: autoDraw = False
+93.5298 	EXP 	n_back_one: autoDraw = False
+93.5298 	EXP 	ISI: text = '+'
+93.5298 	EXP 	ISI: autoDraw = True
+95.0151 	EXP 	New trial (rep=0, index=21): {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}
+95.0296 	EXP 	ISI: autoDraw = False
+95.0296 	EXP 	ISI: autoDraw = False
+95.0296 	EXP 	n_back_one: height = 0.05
+95.0296 	EXP 	n_back_one: height = 0.05
+95.0296 	EXP 	n_back_one: height = 0.05
+95.0296 	EXP 	n_back_one: text = 'W'
+95.0296 	EXP 	n_back_one: autoDraw = True
+95.3299 	EXP 	n_back_one: autoDraw = False
+96.2295 	EXP 	n_back_one: autoDraw = False
+96.2295 	EXP 	ISI: text = '+'
+96.2295 	EXP 	ISI: autoDraw = True
+97.7138 	EXP 	New trial (rep=0, index=22): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+97.7294 	EXP 	ISI: autoDraw = False
+97.7294 	EXP 	ISI: autoDraw = False
+97.7294 	EXP 	n_back_one: height = 0.05
+97.7294 	EXP 	n_back_one: height = 0.05
+97.7294 	EXP 	n_back_one: height = 0.05
+97.7294 	EXP 	n_back_one: text = 'X'
+97.7294 	EXP 	n_back_one: autoDraw = True
+98.0293 	EXP 	n_back_one: autoDraw = False
+98.9294 	EXP 	n_back_one: autoDraw = False
+98.9294 	EXP 	ISI: text = '+'
+98.9294 	EXP 	ISI: autoDraw = True
+100.4161 	EXP 	New trial (rep=0, index=23): {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}
+100.4302 	EXP 	ISI: autoDraw = False
+100.4302 	EXP 	n_back_one: text = 'X'
+100.4302 	EXP 	n_back_one: autoDraw = True
+100.7297 	EXP 	n_back_one: autoDraw = False
+101.6297 	EXP 	n_back_one: autoDraw = False
+101.6297 	EXP 	ISI: text = '+'
+101.6297 	EXP 	ISI: autoDraw = True
+103.1147 	EXP 	New trial (rep=0, index=24): {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}
+103.1297 	EXP 	ISI: autoDraw = False
+103.1297 	EXP 	ISI: autoDraw = False
+103.1297 	EXP 	n_back_one: height = 0.05
+103.1297 	EXP 	n_back_one: height = 0.05
+103.1297 	EXP 	n_back_one: height = 0.05
+103.1297 	EXP 	n_back_one: text = 'A'
+103.1297 	EXP 	n_back_one: autoDraw = True
+103.4299 	EXP 	n_back_one: autoDraw = False
+104.3298 	EXP 	n_back_one: autoDraw = False
+104.3298 	EXP 	ISI: text = '+'
+104.3298 	EXP 	ISI: autoDraw = True
+105.8144 	EXP 	New trial (rep=0, index=25): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+105.8302 	EXP 	ISI: autoDraw = False
+105.8302 	EXP 	ISI: autoDraw = False
+105.8302 	EXP 	n_back_one: height = 0.05
+105.8302 	EXP 	n_back_one: height = 0.05
+105.8302 	EXP 	n_back_one: height = 0.05
+105.8302 	EXP 	n_back_one: text = 'X'
+105.8302 	EXP 	n_back_one: autoDraw = True
+106.1299 	EXP 	n_back_one: autoDraw = False
+106.2336 	DATA 	Keypress: z
+106.2468 	EXP 	n_back_one: autoDraw = False
+106.2468 	EXP 	ISI: text = '+'
+106.2468 	EXP 	ISI: autoDraw = True
+107.7312 	EXP 	New trial (rep=0, index=26): {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}
+107.7469 	EXP 	ISI: autoDraw = False
+107.7469 	EXP 	ISI: autoDraw = False
+107.7469 	EXP 	n_back_one: text = 'X'
+107.7469 	EXP 	n_back_one: autoDraw = True
+108.0467 	EXP 	n_back_one: autoDraw = False
+108.9631 	EXP 	n_back_one: autoDraw = False
+108.9631 	EXP 	ISI: text = '+'
+108.9631 	EXP 	ISI: autoDraw = True
+110.4469 	EXP 	New trial (rep=0, index=27): {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}
+110.4635 	EXP 	ISI: autoDraw = False
+110.4635 	EXP 	n_back_one: height = 0.05
+110.4635 	EXP 	n_back_one: height = 0.05
+110.4635 	EXP 	n_back_one: height = 0.05
+110.4635 	EXP 	n_back_one: text = 'C'
+110.4635 	EXP 	n_back_one: autoDraw = True
+110.7634 	EXP 	n_back_one: autoDraw = False
+111.6306 	EXP 	n_back_one: autoDraw = False
+111.6306 	EXP 	ISI: text = '+'
+111.6469 	EXP 	ISI: autoDraw = True
+113.1314 	EXP 	New trial (rep=0, index=28): {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}
+113.1472 	EXP 	ISI: autoDraw = False
+113.1472 	EXP 	ISI: autoDraw = False
+113.1472 	EXP 	n_back_one: height = 0.05
+113.1472 	EXP 	n_back_one: height = 0.05
+113.1472 	EXP 	n_back_one: height = 0.05
+113.1472 	EXP 	n_back_one: text = 'V'
+113.1472 	EXP 	n_back_one: autoDraw = True
+113.4472 	EXP 	n_back_one: autoDraw = False
+114.3637 	EXP 	n_back_one: autoDraw = False
+114.3637 	EXP 	ISI: text = '+'
+114.3637 	EXP 	ISI: autoDraw = True
+115.8478 	EXP 	New trial (rep=0, index=29): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+115.8634 	EXP 	ISI: autoDraw = False
+115.8634 	EXP 	n_back_one: height = 0.05
+115.8634 	EXP 	n_back_one: height = 0.05
+115.8634 	EXP 	n_back_one: height = 0.05
+115.8634 	EXP 	n_back_one: text = 'Y'
+115.8634 	EXP 	n_back_one: autoDraw = True
+116.1640 	EXP 	n_back_one: autoDraw = False
+117.0304 	EXP 	n_back_one: autoDraw = False
+117.0304 	EXP 	ISI: text = '+'
+117.0304 	EXP 	ISI: autoDraw = True
+118.5151 	EXP 	New trial (rep=0, index=30): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+118.5302 	EXP 	ISI: autoDraw = False
+118.5302 	EXP 	ISI: autoDraw = False
+118.5302 	EXP 	n_back_one: height = 0.05
+118.5302 	EXP 	n_back_one: height = 0.05
+118.5302 	EXP 	n_back_one: height = 0.05
+118.5302 	EXP 	n_back_one: text = 'X'
+118.5302 	EXP 	n_back_one: autoDraw = True
+118.8304 	EXP 	n_back_one: autoDraw = False
+119.2519 	DATA 	Keypress: z
+119.2638 	EXP 	n_back_one: autoDraw = False
+119.2638 	EXP 	ISI: text = '+'
+119.2638 	EXP 	ISI: autoDraw = True
+120.7480 	EXP 	New trial (rep=0, index=31): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+120.7637 	EXP 	ISI: autoDraw = False
+120.7637 	EXP 	ISI: autoDraw = False
+120.7637 	EXP 	n_back_one: height = 0.05
+120.7637 	EXP 	n_back_one: height = 0.05
+120.7637 	EXP 	n_back_one: height = 0.05
+120.7637 	EXP 	n_back_one: text = 'B'
+120.7637 	EXP 	n_back_one: autoDraw = True
+121.0638 	EXP 	n_back_one: autoDraw = False
+121.9639 	EXP 	n_back_one: autoDraw = False
+121.9639 	EXP 	ISI: text = '+'
+121.9639 	EXP 	ISI: autoDraw = True
+123.4489 	EXP 	New trial (rep=0, index=32): {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}
+123.4637 	EXP 	ISI: autoDraw = False
+123.4637 	EXP 	ISI: autoDraw = False
+123.4637 	EXP 	n_back_one: height = 0.05
+123.4637 	EXP 	n_back_one: height = 0.05
+123.4637 	EXP 	n_back_one: height = 0.05
+123.4637 	EXP 	n_back_one: text = 'W'
+123.4637 	EXP 	n_back_one: autoDraw = True
+123.7639 	EXP 	n_back_one: autoDraw = False
+124.6637 	EXP 	n_back_one: autoDraw = False
+124.6637 	EXP 	ISI: text = '+'
+124.6637 	EXP 	ISI: autoDraw = True
+126.1487 	EXP 	New trial (rep=0, index=33): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+126.1644 	EXP 	ISI: autoDraw = False
+126.1644 	EXP 	ISI: autoDraw = False
+126.1644 	EXP 	n_back_one: height = 0.05
+126.1644 	EXP 	n_back_one: height = 0.05
+126.1644 	EXP 	n_back_one: height = 0.05
+126.1644 	EXP 	n_back_one: text = 'B'
+126.1644 	EXP 	n_back_one: autoDraw = True
+126.4639 	EXP 	n_back_one: autoDraw = False
+127.3638 	EXP 	n_back_one: autoDraw = False
+127.3638 	EXP 	ISI: text = '+'
+127.3638 	EXP 	ISI: autoDraw = True
+128.8486 	EXP 	New trial (rep=0, index=34): {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}
+128.8639 	EXP 	ISI: autoDraw = False
+128.8639 	EXP 	ISI: autoDraw = False
+128.8639 	EXP 	n_back_one: text = 'B'
+128.8639 	EXP 	n_back_one: autoDraw = True
+129.1643 	EXP 	n_back_one: autoDraw = False
+130.0643 	EXP 	n_back_one: autoDraw = False
+130.0643 	EXP 	ISI: text = '+'
+130.0643 	EXP 	ISI: autoDraw = True
+131.5487 	EXP 	New trial (rep=0, index=35): {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}
+131.5663 	EXP 	ISI: autoDraw = False
+131.5663 	EXP 	ISI: autoDraw = False
+131.5663 	EXP 	n_back_one: height = 0.05
+131.5663 	EXP 	n_back_one: height = 0.05
+131.5663 	EXP 	n_back_one: height = 0.05
+131.5663 	EXP 	n_back_one: text = 'W'
+131.5663 	EXP 	n_back_one: autoDraw = True
+131.8812 	EXP 	n_back_one: autoDraw = False
+131.9180 	DATA 	Keypress: z
+131.9309 	EXP 	n_back_one: autoDraw = False
+131.9309 	EXP 	ISI: text = '+'
+131.9309 	EXP 	ISI: autoDraw = True
+133.4162 	EXP 	New trial (rep=0, index=36): {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}
+133.4311 	EXP 	ISI: autoDraw = False
+133.4311 	EXP 	ISI: autoDraw = False
+133.4311 	EXP 	n_back_one: text = 'W'
+133.4311 	EXP 	n_back_one: autoDraw = True
+133.7310 	EXP 	n_back_one: autoDraw = False
+134.6309 	EXP 	n_back_one: autoDraw = False
+134.6309 	EXP 	ISI: text = '+'
+134.6309 	EXP 	ISI: autoDraw = True
+136.1157 	EXP 	New trial (rep=0, index=37): {'stimuli_letter': 'W', 'target': 'Y', 'correct_key': 'z'}
+136.1312 	EXP 	ISI: autoDraw = False
+136.1312 	EXP 	ISI: autoDraw = False
+136.1312 	EXP 	n_back_one: text = 'W'
+136.1312 	EXP 	n_back_one: autoDraw = True
+136.4315 	EXP 	n_back_one: autoDraw = False
+137.3310 	EXP 	n_back_one: autoDraw = False
+137.3310 	EXP 	ISI: text = '+'
+137.3310 	EXP 	ISI: autoDraw = True
+138.8156 	EXP 	New trial (rep=0, index=38): {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}
+138.8313 	EXP 	ISI: autoDraw = False
+138.8313 	EXP 	ISI: autoDraw = False
+138.8313 	EXP 	n_back_one: height = 0.05
+138.8313 	EXP 	n_back_one: height = 0.05
+138.8313 	EXP 	n_back_one: height = 0.05
+138.8313 	EXP 	n_back_one: text = 'C'
+138.8313 	EXP 	n_back_one: autoDraw = True
+139.1313 	EXP 	n_back_one: autoDraw = False
+140.0311 	EXP 	n_back_one: autoDraw = False
+140.0311 	EXP 	ISI: text = '+'
+140.0311 	EXP 	ISI: autoDraw = True
+141.5158 	EXP 	New trial (rep=0, index=39): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+141.5311 	EXP 	ISI: autoDraw = False
+141.5311 	EXP 	ISI: autoDraw = False
+141.5311 	EXP 	n_back_one: height = 0.05
+141.5311 	EXP 	n_back_one: height = 0.05
+141.5311 	EXP 	n_back_one: height = 0.05
+141.5311 	EXP 	n_back_one: text = 'Y'
+141.5311 	EXP 	n_back_one: autoDraw = True
+141.8319 	EXP 	n_back_one: autoDraw = False
+142.7149 	EXP 	n_back_one: autoDraw = False
+142.7149 	EXP 	ISI: text = '+'
+142.7149 	EXP 	ISI: autoDraw = True
+144.2023 	EXP 	New trial (rep=0, index=40): {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}
+144.2149 	EXP 	ISI: autoDraw = False
+144.2149 	EXP 	ISI: autoDraw = False
+144.2149 	EXP 	n_back_one: height = 0.05
+144.2149 	EXP 	n_back_one: height = 0.05
+144.2149 	EXP 	n_back_one: height = 0.05
+144.2149 	EXP 	n_back_one: text = 'A'
+144.2149 	EXP 	n_back_one: autoDraw = True
+144.5152 	EXP 	n_back_one: autoDraw = False
+145.4149 	EXP 	n_back_one: autoDraw = False
+145.4149 	EXP 	ISI: text = '+'
+145.4149 	EXP 	ISI: autoDraw = True
+146.9001 	EXP 	New trial (rep=0, index=41): {'stimuli_letter': 'A', 'target': 'Y', 'correct_key': 'z'}
+146.9156 	EXP 	ISI: autoDraw = False
+146.9156 	EXP 	ISI: autoDraw = False
+146.9156 	EXP 	n_back_one: text = 'A'
+146.9156 	EXP 	n_back_one: autoDraw = True
+147.2155 	EXP 	n_back_one: autoDraw = False
+148.1154 	EXP 	n_back_one: autoDraw = False
+148.1154 	EXP 	ISI: text = '+'
+148.1315 	EXP 	ISI: autoDraw = True
+149.6161 	EXP 	New trial (rep=0, index=42): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+149.6314 	EXP 	ISI: autoDraw = False
+149.6314 	EXP 	n_back_one: height = 0.05
+149.6314 	EXP 	n_back_one: height = 0.05
+149.6314 	EXP 	n_back_one: height = 0.05
+149.6314 	EXP 	n_back_one: text = 'Y'
+149.6314 	EXP 	n_back_one: autoDraw = True
+149.9316 	EXP 	n_back_one: autoDraw = False
+150.8156 	EXP 	n_back_one: autoDraw = False
+150.8156 	EXP 	ISI: text = '+'
+150.8156 	EXP 	ISI: autoDraw = True
+152.2990 	EXP 	New trial (rep=0, index=43): {'stimuli_letter': 'W', 'target': 'N', 'correct_key': None}
+152.3152 	EXP 	ISI: autoDraw = False
+152.3152 	EXP 	ISI: autoDraw = False
+152.3152 	EXP 	n_back_one: height = 0.05
+152.3152 	EXP 	n_back_one: height = 0.05
+152.3152 	EXP 	n_back_one: height = 0.05
+152.3152 	EXP 	n_back_one: text = 'W'
+152.3323 	EXP 	n_back_one: autoDraw = True
+152.6320 	EXP 	n_back_one: autoDraw = False
+152.7692 	DATA 	Keypress: z
+152.7821 	EXP 	n_back_one: autoDraw = False
+152.7821 	EXP 	ISI: text = '+'
+152.7821 	EXP 	ISI: autoDraw = True
+154.2663 	EXP 	New trial (rep=0, index=44): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+154.2824 	EXP 	ISI: autoDraw = False
+154.2824 	EXP 	ISI: autoDraw = False
+154.2824 	EXP 	n_back_one: height = 0.05
+154.2824 	EXP 	n_back_one: height = 0.05
+154.2824 	EXP 	n_back_one: height = 0.05
+154.2824 	EXP 	n_back_one: text = 'B'
+154.2824 	EXP 	n_back_one: autoDraw = True
+154.5984 	EXP 	n_back_one: autoDraw = False
+155.4824 	EXP 	n_back_one: autoDraw = False
+155.4824 	EXP 	ISI: text = '+'
+155.4824 	EXP 	ISI: autoDraw = True
+156.9662 	EXP 	New trial (rep=0, index=45): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+156.9821 	EXP 	ISI: autoDraw = False
+156.9821 	EXP 	ISI: autoDraw = False
+156.9821 	EXP 	n_back_one: height = 0.05
+156.9821 	EXP 	n_back_one: height = 0.05
+156.9821 	EXP 	n_back_one: height = 0.05
+156.9821 	EXP 	n_back_one: text = 'Y'
+156.9821 	EXP 	n_back_one: autoDraw = True
+157.2822 	EXP 	n_back_one: autoDraw = False
+158.1823 	EXP 	n_back_one: autoDraw = False
+158.1823 	EXP 	ISI: text = '+'
+158.1823 	EXP 	ISI: autoDraw = True
+159.6663 	EXP 	New trial (rep=0, index=46): {'stimuli_letter': 'C', 'target': 'N', 'correct_key': None}
+159.6824 	EXP 	ISI: autoDraw = False
+159.6824 	EXP 	ISI: autoDraw = False
+159.6824 	EXP 	n_back_one: height = 0.05
+159.6824 	EXP 	n_back_one: height = 0.05
+159.6824 	EXP 	n_back_one: height = 0.05
+159.6824 	EXP 	n_back_one: text = 'C'
+159.6824 	EXP 	n_back_one: autoDraw = True
+159.9821 	EXP 	n_back_one: autoDraw = False
+160.8656 	EXP 	n_back_one: autoDraw = False
+160.8656 	EXP 	ISI: text = '+'
+160.8827 	EXP 	ISI: autoDraw = True
+162.3676 	EXP 	New trial (rep=0, index=47): {'stimuli_letter': 'C', 'target': 'Y', 'correct_key': 'z'}
+162.3826 	EXP 	ISI: autoDraw = False
+162.3826 	EXP 	ISI: autoDraw = False
+162.3826 	EXP 	n_back_one: text = 'C'
+162.3826 	EXP 	n_back_one: autoDraw = True
+162.6825 	EXP 	n_back_one: autoDraw = False
+163.5824 	EXP 	n_back_one: autoDraw = False
+163.5824 	EXP 	ISI: text = '+'
+163.5824 	EXP 	ISI: autoDraw = True
+165.0674 	EXP 	New trial (rep=0, index=48): {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}
+165.0822 	EXP 	ISI: autoDraw = False
+165.0822 	EXP 	n_back_one: height = 0.05
+165.0822 	EXP 	n_back_one: height = 0.05
+165.0822 	EXP 	n_back_one: height = 0.05
+165.0822 	EXP 	n_back_one: text = 'V'
+165.0822 	EXP 	n_back_one: autoDraw = True
+165.3824 	EXP 	n_back_one: autoDraw = False
+165.5045 	DATA 	Keypress: z
+165.5162 	EXP 	n_back_one: autoDraw = False
+165.5162 	EXP 	ISI: text = '+'
+165.5162 	EXP 	ISI: autoDraw = True
+167.0006 	EXP 	New trial (rep=0, index=49): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+167.0159 	EXP 	ISI: autoDraw = False
+167.0159 	EXP 	ISI: autoDraw = False
+167.0159 	EXP 	n_back_one: height = 0.05
+167.0159 	EXP 	n_back_one: height = 0.05
+167.0159 	EXP 	n_back_one: height = 0.05
+167.0159 	EXP 	n_back_one: text = 'B'
+167.0159 	EXP 	n_back_one: autoDraw = True
+167.3161 	EXP 	n_back_one: autoDraw = False
+168.2159 	EXP 	n_back_one: autoDraw = False
+168.2159 	EXP 	ISI: text = '+'
+168.2159 	EXP 	ISI: autoDraw = True
+169.6999 	EXP 	New trial (rep=0, index=50): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+169.7161 	EXP 	ISI: autoDraw = False
+169.7161 	EXP 	ISI: autoDraw = False
+169.7161 	EXP 	n_back_one: height = 0.05
+169.7161 	EXP 	n_back_one: height = 0.05
+169.7161 	EXP 	n_back_one: height = 0.05
+169.7161 	EXP 	n_back_one: text = 'X'
+169.7161 	EXP 	n_back_one: autoDraw = True
+170.0162 	EXP 	n_back_one: autoDraw = False
+170.9166 	EXP 	n_back_one: autoDraw = False
+170.9166 	EXP 	ISI: text = '+'
+170.9166 	EXP 	ISI: autoDraw = True
+172.4006 	EXP 	New trial (rep=0, index=51): {'stimuli_letter': 'X', 'target': 'Y', 'correct_key': 'z'}
+172.4160 	EXP 	ISI: autoDraw = False
+172.4160 	EXP 	ISI: autoDraw = False
+172.4160 	EXP 	n_back_one: text = 'X'
+172.4160 	EXP 	n_back_one: autoDraw = True
+172.7159 	EXP 	n_back_one: autoDraw = False
+173.6165 	EXP 	n_back_one: autoDraw = False
+173.6165 	EXP 	ISI: text = '+'
+173.6165 	EXP 	ISI: autoDraw = True
+175.1017 	EXP 	New trial (rep=0, index=52): {'stimuli_letter': 'V', 'target': 'N', 'correct_key': None}
+175.1161 	EXP 	ISI: autoDraw = False
+175.1161 	EXP 	ISI: autoDraw = False
+175.1161 	EXP 	n_back_one: height = 0.05
+175.1161 	EXP 	n_back_one: height = 0.05
+175.1161 	EXP 	n_back_one: height = 0.05
+175.1161 	EXP 	n_back_one: text = 'V'
+175.1161 	EXP 	n_back_one: autoDraw = True
+175.4163 	EXP 	n_back_one: autoDraw = False
+176.3166 	EXP 	n_back_one: autoDraw = False
+176.3166 	EXP 	ISI: text = '+'
+176.3166 	EXP 	ISI: autoDraw = True
+177.8022 	EXP 	New trial (rep=0, index=53): {'stimuli_letter': 'Y', 'target': 'N', 'correct_key': None}
+177.8161 	EXP 	ISI: autoDraw = False
+177.8161 	EXP 	n_back_one: height = 0.05
+177.8161 	EXP 	n_back_one: height = 0.05
+177.8161 	EXP 	n_back_one: height = 0.05
+177.8161 	EXP 	n_back_one: text = 'Y'
+177.8161 	EXP 	n_back_one: autoDraw = True
+178.1167 	EXP 	n_back_one: autoDraw = False
+178.1389 	DATA 	Keypress: z
+178.1496 	EXP 	n_back_one: autoDraw = False
+178.1496 	EXP 	ISI: text = '+'
+178.1496 	EXP 	ISI: autoDraw = True
+179.6338 	EXP 	New trial (rep=0, index=54): {'stimuli_letter': 'B', 'target': 'N', 'correct_key': None}
+179.6501 	EXP 	ISI: autoDraw = False
+179.6501 	EXP 	ISI: autoDraw = False
+179.6501 	EXP 	n_back_one: height = 0.05
+179.6501 	EXP 	n_back_one: height = 0.05
+179.6501 	EXP 	n_back_one: height = 0.05
+179.6501 	EXP 	n_back_one: text = 'B'
+179.6501 	EXP 	n_back_one: autoDraw = True
+179.9497 	EXP 	n_back_one: autoDraw = False
+180.8499 	EXP 	n_back_one: autoDraw = False
+180.8499 	EXP 	ISI: text = '+'
+180.8499 	EXP 	ISI: autoDraw = True
+182.3358 	EXP 	New trial (rep=0, index=55): {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}
+182.3499 	EXP 	ISI: autoDraw = False
+182.3499 	EXP 	ISI: autoDraw = False
+182.3499 	EXP 	n_back_one: text = 'B'
+182.3499 	EXP 	n_back_one: autoDraw = True
+182.6496 	EXP 	n_back_one: autoDraw = False
+183.5499 	EXP 	n_back_one: autoDraw = False
+183.5499 	EXP 	ISI: text = '+'
+183.5499 	EXP 	ISI: autoDraw = True
+185.0352 	EXP 	New trial (rep=0, index=56): {'stimuli_letter': 'B', 'target': 'Y', 'correct_key': 'z'}
+185.0504 	EXP 	ISI: autoDraw = False
+185.0504 	EXP 	ISI: autoDraw = False
+185.0504 	EXP 	n_back_one: text = 'B'
+185.0504 	EXP 	n_back_one: autoDraw = True
+185.3501 	EXP 	n_back_one: autoDraw = False
+185.4727 	DATA 	Keypress: z
+185.4893 	EXP 	n_back_one: autoDraw = False
+185.4893 	EXP 	ISI: text = '+'
+185.4893 	EXP 	ISI: autoDraw = True
+187.0208 	EXP 	New trial (rep=0, index=57): {'stimuli_letter': 'A', 'target': 'N', 'correct_key': None}
+187.0335 	EXP 	ISI: autoDraw = False
+187.0335 	EXP 	n_back_one: height = 0.05
+187.0335 	EXP 	n_back_one: height = 0.05
+187.0335 	EXP 	n_back_one: height = 0.05
+187.0335 	EXP 	n_back_one: text = 'A'
+187.0335 	EXP 	n_back_one: autoDraw = True
+187.3366 	EXP 	n_back_one: autoDraw = False
+188.1997 	EXP 	n_back_one: autoDraw = False
+188.1997 	EXP 	ISI: text = '+'
+188.1997 	EXP 	ISI: autoDraw = True
+189.7097 	EXP 	New trial (rep=0, index=58): {'stimuli_letter': 'X', 'target': 'N', 'correct_key': None}
+189.7424 	EXP 	ISI: autoDraw = False
+189.7424 	EXP 	n_back_one: height = 0.05
+189.7424 	EXP 	n_back_one: height = 0.05
+189.7424 	EXP 	n_back_one: height = 0.05
+189.7424 	EXP 	n_back_one: text = 'X'
+189.7424 	EXP 	n_back_one: autoDraw = True
+190.0511 	EXP 	n_back_one: autoDraw = False
+190.4358 	DATA 	Keypress: escape
+191.2032 	EXP 	window1: mouseVisible = True

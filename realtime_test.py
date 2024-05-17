@@ -53,6 +53,10 @@ class Graph:
             #                             FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
             DataFilter.perform_bandstop(data[channel], self.sampling_rate, 58.0, 62.0, 2,
                                         FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
+            DataFilter.perform_bandstop(data[channel], self.sampling_rate, 23.0, 27.0, 2,
+                            FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
+            DataFilter.perform_bandstop(data[channel], self.sampling_rate, 11.0, 13.0, 2,
+                FilterTypes.BUTTERWORTH_ZERO_PHASE, 0)
             # DataFilter.perform_rolling_filter(data[channel], 3, AggOperations.MEAN.value)
             # DataFilter.perform_rolling_filter(data[channel], 3, AggOperations.MEDIAN.value)
             # DataFilter.perform_wavelet_denoising(data[channel], WaveletTypes.BIOR3_9, 3,
